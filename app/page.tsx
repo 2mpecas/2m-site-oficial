@@ -103,3 +103,21 @@ export default function Home() {
     </main>
   )
 }
+<a
+  href="https://wa.me/5511995453335"
+  target="_blank"
+  style={{
+    position: 'fixed',
+    bottom: '20px',
+    right: '20px',
+    backgroundColor: '#25D366',
+    color: '#fff',
+    padding: '15px 20px',
+    borderRadius: '50px',
+    fontSize: '18px',
+    textDecoration: 'none',
+    boxShadow: '0 0 10px rgba(0,0,0,0.5)'
+  }}
+>
+  WhatsApp
+</a>
