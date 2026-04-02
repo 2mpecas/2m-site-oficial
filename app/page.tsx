@@ -596,5 +596,26 @@ export default function Home() {
         WhatsApp
       </a>
     </main>
-  );
+<a
+  href="https://wa.me/5511995453335?text=Olá,%20vim%20pelo%20site%20e%20quero%20mais%20informações"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    position: "fixed",
+    bottom: "20px",
+    right: "20px",
+    backgroundColor: "#25D366",
+    color: "#ffffff",
+    textDecoration: "none",
+    padding: "14px 20px",
+    borderRadius: "999px",
+    fontWeight: "700",
+    boxShadow: "0 8px 24px rgba(0,0,0,0.35)",
+    fontSize: "16px",
+    zIndex: 999,
+  }}
+>
+  Solicitar orçamento
+</a>
+);
 }
