@@ -69,16 +69,16 @@ export default function Home() {
               Quem somos
             </a>
             <a
+              href="#atuacao"
+              style={{ color: "#d8d8d8", textDecoration: "none", fontSize: "15px" }}
+            >
+              Atuação
+            </a>
+            <a
               href="#diferenciais"
               style={{ color: "#d8d8d8", textDecoration: "none", fontSize: "15px" }}
             >
               Diferenciais
-            </a>
-            <a
-              href="#estrutura"
-              style={{ color: "#d8d8d8", textDecoration: "none", fontSize: "15px" }}
-            >
-              Estrutura
             </a>
             <a
               href="#contato"
@@ -130,13 +130,15 @@ export default function Home() {
 
             <h1
               style={{
-                fontSize: "56px",
+                fontSize: "52px",
                 lineHeight: 1.1,
                 marginTop: "18px",
                 marginBottom: "20px",
               }}
             >
-              Soluções em autopeças com atendimento ágil e parceria comercial de verdade.
+              Distribuidora de autopeças com atendimento estratégico para Norte,
+              Nordeste, Sul, Centro-Oeste e, no Sudeste, com foco em Rio de Janeiro
+              e Espírito Santo.
             </h1>
 
             <p
@@ -144,11 +146,12 @@ export default function Home() {
                 color: "#f1eaea",
                 fontSize: "20px",
                 lineHeight: 1.8,
-                maxWidth: "700px",
+                maxWidth: "760px",
               }}
             >
-              Atendemos empresas em todo o Brasil com seriedade, confiança e condições
-              pensadas para quem busca comprar bem, com segurança e rapidez.
+              Atendemos empresas que buscam confiança, agilidade e suporte comercial
+              eficiente, com atuação direcionada para regiões estratégicas e foco em
+              relacionamento de longo prazo.
             </p>
 
             <div
@@ -160,7 +163,7 @@ export default function Home() {
               }}
             >
               <a
-                href="https://wa.me/5511995453335"
+                href="https://wa.me/5511995453335?text=Olá,%20vim%20pelo%20site%20e%20quero%20mais%20informações"
                 target="_blank"
                 rel="noreferrer"
                 style={{
@@ -173,11 +176,11 @@ export default function Home() {
                   fontSize: "17px",
                 }}
               >
-                Chamar no WhatsApp
+                Solicitar atendimento
               </a>
 
               <a
-                href="#sobre"
+                href="#atuacao"
                 style={{
                   border: "1px solid rgba(255,255,255,0.35)",
                   color: "#ffffff",
@@ -188,7 +191,7 @@ export default function Home() {
                   fontSize: "17px",
                 }}
               >
-                Conheça a empresa
+                Ver área de atuação
               </a>
             </div>
           </div>
@@ -217,9 +220,9 @@ export default function Home() {
                     padding: "20px",
                   }}
                 >
-                  <div style={{ color: "#ffbdbd", fontSize: "13px" }}>Cobertura</div>
+                  <div style={{ color: "#ffbdbd", fontSize: "13px" }}>Atuação</div>
                   <div style={{ marginTop: "8px", fontSize: "24px", fontWeight: 700 }}>
-                    Brasil
+                    Regional
                   </div>
                 </div>
 
@@ -270,7 +273,7 @@ export default function Home() {
       <section
         id="sobre"
         style={{
-          padding: "80px 20px 40px",
+          padding: "80px 20px 30px",
           backgroundColor: "#090909",
         }}
       >
@@ -294,7 +297,7 @@ export default function Home() {
               marginBottom: "20px",
             }}
           >
-            Uma distribuidora focada em confiança, relacionamento e resultado.
+            Uma distribuidora voltada para relacionamento, confiança e resultado.
           </h2>
 
           <p
@@ -305,19 +308,104 @@ export default function Home() {
               maxWidth: "1000px",
             }}
           >
-            A 2M Peças Automotivas atua com foco institucional e comercial,
-            atendendo parceiros que buscam agilidade, segurança nas negociações
-            e uma relação de longo prazo. Trabalhamos para entregar um atendimento
-            próximo e eficiente, sempre com compromisso em gerar valor real para
-            cada cliente.
+            A 2M Peças Automotivas atua com foco comercial e institucional,
+            oferecendo atendimento próximo, seriedade nas negociações e suporte
+            eficiente para parceiros que precisam de agilidade e segurança.
           </p>
+        </div>
+      </section>
+
+      <section
+        id="atuacao"
+        style={{
+          padding: "30px 20px 80px",
+          backgroundColor: "#090909",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1180px",
+            margin: "0 auto",
+            backgroundColor: "#131313",
+            border: "1px solid rgba(255,255,255,0.06)",
+            borderRadius: "18px",
+            padding: "32px",
+          }}
+        >
+          <p
+            style={{
+              color: "#ff4242",
+              textTransform: "uppercase",
+              letterSpacing: "2px",
+              fontSize: "13px",
+              marginBottom: "10px",
+            }}
+          >
+            Área de atuação
+          </p>
+
+          <h2
+            style={{
+              fontSize: "34px",
+              marginTop: 0,
+              marginBottom: "20px",
+            }}
+          >
+            Atendimento direcionado para regiões estratégicas.
+          </h2>
+
+          <p
+            style={{
+              color: "#dddddd",
+              fontSize: "18px",
+              lineHeight: 1.9,
+              marginBottom: "24px",
+            }}
+          >
+            Nossa atuação comercial está focada nas regiões Norte, Nordeste, Sul e
+            Centro-Oeste. No Sudeste, atendemos com foco especial os estados do Rio
+            de Janeiro e Espírito Santo.
+          </p>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
+              gap: "16px",
+            }}
+          >
+            {[
+              "Norte",
+              "Nordeste",
+              "Sul",
+              "Centro-Oeste",
+              "Rio de Janeiro",
+              "Espírito Santo",
+            ].map((item) => (
+              <div
+                key={item}
+                style={{
+                  backgroundColor: "#1a1a1a",
+                  border: "1px solid rgba(255,255,255,0.05)",
+                  borderRadius: "14px",
+                  padding: "18px",
+                  textAlign: "center",
+                  fontSize: "17px",
+                  fontWeight: 700,
+                  color: "#ffffff",
+                }}
+              >
+                {item}
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       <section
         id="diferenciais"
         style={{
-          padding: "40px 20px 80px",
+          padding: "0 20px 80px",
           backgroundColor: "#090909",
         }}
       >
@@ -337,9 +425,9 @@ export default function Home() {
                 "Equipe preparada para atender com rapidez, clareza e suporte comercial eficiente.",
             },
             {
-              titulo: "Envio nacional",
+              titulo: "Atuação regional estratégica",
               texto:
-                "Atendemos todo o território nacional com compromisso em agilidade e organização.",
+                "Posicionamento comercial direcionado para regiões com maior prioridade de atendimento.",
             },
             {
               titulo: "Condições comerciais",
@@ -347,9 +435,9 @@ export default function Home() {
                 "Modelos de faturamento pensados para facilitar a rotina dos nossos parceiros.",
             },
             {
-              titulo: "Credibilidade",
+              titulo: "Confiança e credibilidade",
               texto:
-                "Relação comercial baseada em confiança, seriedade e visão de longo prazo.",
+                "Relacionamento comercial baseado em seriedade, procedência e visão de longo prazo.",
             },
           ].map((item) => (
             <div
@@ -387,98 +475,12 @@ export default function Home() {
       </section>
 
       <section
-        id="estrutura"
-        style={{
-          backgroundColor: "#111111",
-          padding: "80px 20px",
-          borderTop: "1px solid rgba(255,255,255,0.06)",
-          borderBottom: "1px solid rgba(255,255,255,0.06)",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "1180px",
-            margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "28px",
-          }}
-        >
-          <div>
-            <p
-              style={{
-                color: "#ff4242",
-                textTransform: "uppercase",
-                letterSpacing: "2px",
-                fontSize: "13px",
-                marginBottom: "10px",
-              }}
-            >
-              Estrutura
-            </p>
-
-            <h2
-              style={{
-                fontSize: "38px",
-                marginTop: 0,
-                marginBottom: "20px",
-              }}
-            >
-              Organização comercial para atender com mais eficiência.
-            </h2>
-
-            <p
-              style={{
-                color: "#e1e1e1",
-                fontSize: "19px",
-                lineHeight: 1.9,
-              }}
-            >
-              Nossa atuação é voltada para oferecer suporte comercial sólido,
-              atendimento consultivo e condições adequadas para parceiros que
-              precisam de agilidade na operação.
-            </p>
-          </div>
-
-          <div
-            style={{
-              backgroundColor: "#171717",
-              border: "1px solid rgba(255,255,255,0.06)",
-              borderRadius: "18px",
-              padding: "28px",
-            }}
-          >
-            <h3
-              style={{
-                color: "#ff3c3c",
-                marginTop: 0,
-                fontSize: "24px",
-              }}
-            >
-              Condições de faturamento
-            </h3>
-            <p
-              style={{
-                color: "#d7d7d7",
-                fontSize: "17px",
-                lineHeight: 1.8,
-                marginBottom: 0,
-              }}
-            >
-              Trabalhamos com diferentes formatos comerciais. Entre eles, o
-              boleto bancário é uma das opções mais utilizadas, com prazo de
-              até 90 dias sem juros, oferecendo mais flexibilidade para nossos
-              parceiros.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section
         id="contato"
         style={{
           padding: "80px 20px",
-          backgroundColor: "#090909",
+          backgroundColor: "#111111",
+          borderTop: "1px solid rgba(255,255,255,0.06)",
+          borderBottom: "1px solid rgba(255,255,255,0.06)",
         }}
       >
         <div
@@ -526,7 +528,7 @@ export default function Home() {
 
           <div style={{ marginTop: "28px" }}>
             <a
-              href="https://wa.me/5511995453335"
+              href="https://wa.me/5511995453335?text=Olá,%20vim%20pelo%20site%20e%20quero%20mais%20informações"
               target="_blank"
               rel="noreferrer"
               style={{
@@ -540,7 +542,7 @@ export default function Home() {
                 fontWeight: 700,
               }}
             >
-              Chamar no WhatsApp
+              Solicitar atendimento no WhatsApp
             </a>
           </div>
 
@@ -556,81 +558,60 @@ export default function Home() {
         </div>
       </section>
 
-    <footer
-  style={{
-    borderTop: "1px solid rgba(255,255,255,0.08)",
-    backgroundColor: "#060606",
-    padding: "24px 20px",
-    textAlign: "center",
-  }}
->
-  <p
-    style={{
-      margin: 0,
-      color: "#bdbdbd",
-      fontSize: "14px",
-      lineHeight: "1.8",
-    }}
-  >
-    DISTRIBUIDORA DE PECAS AUTOMOTIVAS 2M LTDA <br />
-    CNPJ: 60.215.000/0001-30 <br />
-    RUA BATISTA CATANI, 66 - MUQUICABA <br />
-    GUARAPARI - ES | CEP: 29215-300
-  </p>
+      <footer
+        style={{
+          borderTop: "1px solid rgba(255,255,255,0.08)",
+          backgroundColor: "#060606",
+          padding: "24px 20px",
+          textAlign: "center",
+        }}
+      >
+        <p
+          style={{
+            margin: 0,
+            color: "#bdbdbd",
+            fontSize: "14px",
+            lineHeight: "1.8",
+          }}
+        >
+          DISTRIBUIDORA DE PECAS AUTOMOTIVAS 2M LTDA <br />
+          CNPJ: 60.215.000/0001-30 <br />
+          RUA BATISTA CATANI, 66 - MUQUICABA <br />
+          GUARAPARI - ES | CEP: 29215-300
+        </p>
 
-  <p
-    style={{
-      marginTop: "10px",
-      color: "#888",
-      fontSize: "13px",
-    }}
-  >
-    © 2026 Todos os direitos reservados
-  </p>
+        <p
+          style={{
+            marginTop: "10px",
+            color: "#888",
+            fontSize: "13px",
+          }}
+        >
+          © 2026 Todos os direitos reservados
+        </p>
       </footer>
 
       <a
-        href="https://wa.me/5511995453335"
+        href="https://wa.me/5511995453335?text=Olá,%20vim%20pelo%20site%20e%20quero%20mais%20informações"
         target="_blank"
-        rel="noreferrer"
+        rel="noopener noreferrer"
         style={{
           position: "fixed",
-          right: "20px",
           bottom: "20px",
+          right: "20px",
           backgroundColor: "#25D366",
           color: "#ffffff",
           textDecoration: "none",
           padding: "14px 20px",
           borderRadius: "999px",
-          fontWeight: 700,
+          fontWeight: "700",
           boxShadow: "0 8px 24px rgba(0,0,0,0.35)",
           fontSize: "16px",
+          zIndex: 999,
         }}
       >
-        WhatsApp
+        Solicitar orçamento
       </a>
     </main>
-<a
-  href="https://wa.me/5511995453335?text=Olá,%20vim%20pelo%20site%20e%20quero%20mais%20informações"
-  target="_blank"
-  rel="noopener noreferrer"
-  style={{
-    position: "fixed",
-    bottom: "20px",
-    right: "20px",
-    backgroundColor: "#25D366",
-    color: "#ffffff",
-    textDecoration: "none",
-    padding: "14px 20px",
-    borderRadius: "999px",
-    fontWeight: "700",
-    boxShadow: "0 8px 24px rgba(0,0,0,0.35)",
-    fontSize: "16px",
-    zIndex: 999,
-  }}
->
-  Solicitar orçamento
-</a>
-);
+  );
 }
-</main>
