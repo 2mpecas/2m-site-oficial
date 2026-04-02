@@ -556,23 +556,37 @@ export default function Home() {
         </div>
       </section>
 
-      <footer
-        style={{
-          borderTop: "1px solid rgba(255,255,255,0.08)",
-          backgroundColor: "#060606",
-          padding: "24px 20px",
-          textAlign: "center",
-        }}
-      >
-        <p
-          style={{
-            margin: 0,
-            color: "#bdbdbd",
-            fontSize: "15px",
-          }}
-        >
-          © 2026 2M Peças Automotivas. Todos os direitos reservados.
-        </p>
+    <footer
+  style={{
+    borderTop: "1px solid rgba(255,255,255,0.08)",
+    backgroundColor: "#060606",
+    padding: "24px 20px",
+    textAlign: "center",
+  }}
+>
+  <p
+    style={{
+      margin: 0,
+      color: "#bdbdbd",
+      fontSize: "14px",
+      lineHeight: "1.8",
+    }}
+  >
+    DISTRIBUIDORA DE PECAS AUTOMOTIVAS 2M LTDA <br />
+    CNPJ: 60.215.000/0001-30 <br />
+    RUA BATISTA CATANI, 66 - MUQUICABA <br />
+    GUARAPARI - ES | CEP: 29215-300
+  </p>
+
+  <p
+    style={{
+      marginTop: "10px",
+      color: "#888",
+      fontSize: "13px",
+    }}
+  >
+    © 2026 Todos os direitos reservados
+  </p>
       </footer>
 
       <a
