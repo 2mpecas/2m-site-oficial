@@ -376,8 +376,7 @@ export default function Home() {
               "Nordeste",
               "Sul",
               "Centro-Oeste",
-              "Rio de Janeiro",
-              "Espírito Santo",
+              "Sudeste",
             ].map((item) => (
               <div
                 key={item}
