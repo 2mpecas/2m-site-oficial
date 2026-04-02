@@ -136,9 +136,7 @@ export default function Home() {
                 marginBottom: "20px",
               }}
             >
-              Distribuidora de autopeças com atendimento estratégico para Norte,
-              Nordeste, Sul, Centro-Oeste e, no Sudeste, com foco em Rio de Janeiro
-              e Espírito Santo.
+              Distribuidora de autopeças com atendimento estratégico para todo BRASIL.
             </h1>
 
             <p
