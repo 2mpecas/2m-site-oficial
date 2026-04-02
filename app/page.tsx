@@ -361,8 +361,7 @@ export default function Home() {
             }}
           >
             Nossa atuação comercial está focada nas regiões Norte, Nordeste, Sul e
-            Centro-Oeste. No Sudeste, atendemos com foco especial os estados do Rio
-            de Janeiro e Espírito Santo.
+            Centro-Oeste, Sudeste, atendemos com foco especial em todos estados Brasileiros.
           </p>
 
           <div
